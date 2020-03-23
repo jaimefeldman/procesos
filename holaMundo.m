@@ -15,7 +15,6 @@ int main(void) {
 	memset(buffer, '\0', sizeof(buffer));
 	strncpy(buffer, getlogin(), 13);
 	printf("El usuario actual es: %s\n", buffer);
-	// -
 
 	return 0;
 }
