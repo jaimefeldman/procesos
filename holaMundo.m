@@ -10,6 +10,11 @@ int main(void) {
 	pid = getpid();
 	printf("pid de la app: %d\n", pid);
 
-	
+	// Obteniendo el nombre del usuario que corre la app.
+	char buffer[256];
+	memset(buffer, '\0', sizeof(buffer));
+	strncpy(buffer, getlogin(), 13);
+	printf("El usuario actual es: %s\n", buffer);
+
 	return 0;
 }
